@@ -63,10 +63,10 @@ This code has been copied to the code chunk below.
 ### Your task:
 
 1.  Modify our `for` loop so that it:
-      - loops through countries in Europe only
-      - plots the sum of gdpPercap and population size per year (should
-        approximate the total GDP)
-      - saves them to a new subfolder inside the (recreated) figures
+    -   loops through countries in Europe only
+    -   plots the product of gdpPercap and population size per year
+        (should approximate the total GDP) instead of the gdpPercap
+    -   saves them to a new subfolder inside the (recreated) figures
         folder called “Europe”.
 2.  Sync to GitHub
 
