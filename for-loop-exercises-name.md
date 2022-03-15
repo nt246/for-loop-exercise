@@ -48,13 +48,13 @@ for (cntry in country_list) {
     filter(country == cntry)
   
   ## plot
-  my_plot <- ggplot(data = gap_to_plot, aes(x = year, y = gdpPercap)) + 
+  my_plot <- ggplot(data = gap_to_plot, aes(x = year, y = gdp_per_cap)) + 
     geom_point() +
     ## add title and save
-    labs(title = paste(cntry, "GDP per capita", sep = " "))
+    labs(title = str_c(cntry, "GDP per capita", sep = " "))
   
   ## add the figures/ folder
-  ggsave(filename = paste("figures/", cntry, "_gdpPercap.png", sep = ""), plot = my_plot)
+  ggsave(filename = str_c("figures/", cntry, "_gdp_per_cap.png", sep = ""), plot = my_plot)
 } 
 ```
 
@@ -85,13 +85,13 @@ for (cntry in country_list) {
     filter(country == cntry)
   
   ## plot
-  my_plot <- ggplot(data = gap_to_plot, aes(x = year, y = gdpPercap)) + 
+  my_plot <- ggplot(data = gap_to_plot, aes(x = year, y = gdp_per_cap)) + 
     geom_point() +
     ## add title and save
-    labs(title = paste(cntry, "GDP per capita", sep = " "))
+    labs(title = str_c(cntry, "GDP per capita", sep = " "))
   
   ## add the figures/ folder
-  ggsave(filename = paste("figures/", cntry, "_gdpPercap.png", sep = ""), plot = my_plot)
+  ggsave(filename = str_c("figures/", cntry, "_gdp_per_cap.png", sep = ""), plot = my_plot)
 } 
 ```
 
